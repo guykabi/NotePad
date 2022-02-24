@@ -1,0 +1,5 @@
+ 
+ <div>
+    <input type="text" #searchbox (keyup)="search(searchbox.value)" id="btnsearch" class="form-control form-control-sm ml-3 w-75" placeholder="Search by title">
+ </div> <br>
+ <app-shownotes  [fromshow]="n"  (notify)="delete($event)" *ngFor="let n of notes"  ></app-shownotes>

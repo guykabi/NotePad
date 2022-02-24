@@ -1,0 +1,13 @@
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.4.1/css/simple-line-icons.css" />
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@200&display=swap" rel="stylesheet" /> 
+ 
+ 
+ <div> 
+    <h2>Add a new note</h2>
+ </div> <br> <br> 
+ <div > 
+    <input type="text"  #title required id="titlename" placeholder="Note title"> <br> <br>
+    <textarea #textarea id="textarea" cols="22" rows="8" required  placeholder="Go for it"></textarea> <br> <br> 
+    <button type="button"  class="btn btn-outline-info" (click)="addnote(textarea.value , title.value)" >Done</button>
+ </div> <br> <br>
+ 

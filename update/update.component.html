@@ -1,0 +1,10 @@
+<div>
+    <h2>Update</h2>
+ </div> <br> 
+ <div>  
+     <form #f = "ngForm" >
+    <input type="text" #title name="Title" [(ngModel)]="titletoupdate" placeholder="Note title"> <br> <br>
+    <textarea #textarea cols="22" rows="8" name="Body" [(ngModel)]="bodytoupdate"  placeholder="Go for it"></textarea> <br> <br> 
+    <button type="button" class="btn btn-outline-info" (click)="updatenote( title.value, textarea.value)" >Done</button> 
+</form>
+ </div> <br>
